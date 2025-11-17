@@ -1,0 +1,100 @@
+/* Reset all spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Placeholder for dynamic loading */
+#navbar-placeholder {
+  margin: 0;
+  padding: 0;
+  background-color: #1195D3; /* matches navbar color */
+}
+
+/* Navbar styling */
+#navbar {
+  background-color: #1195D3 !important; /* your blue */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  position: fixed; /* flush at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Remove container padding */
+#navbar .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Logo image flush */
+#navbar .navbar-brand img {
+  display: block;
+  vertical-align: top;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+    height: auto;          /* maintain aspect ratio */
+  max-height: 80px;      /* maximum height on large screens */
+  height: clamp(40px, 8vw, 100px);
+  width: auto;            /* maintain aspect ratio */
+}
+#navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Navbar links */
+#navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: clamp(14px, 1.2vw, 20px);
+  text-decoration: none;
+}
+
+#navbar .nav-link:hover {
+  transition: color 0.3s ease;
+    color: hwb(0 60% 40%) !important; 
+}
+#navbar .nav-link.active {
+  border-bottom: 2px solid white;
+}
+
+
+/* Push page content below navbar */
+body {
+  padding-top: 60px; /* adjust to navbar height */
+}
+
+/* Show dropdown menu on hover */
+#navbar .nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0; /* optional to remove small gap */
+}
+
+/* Optional smooth fade-in */
+#navbar .dropdown-menu {
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: block; /* keep it block so transition works */
+}
+
+#navbar .nav-item.dropdown:hover > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+main {
+  margin-top: clamp(60px, 10vw, 100px);
+}
+
