@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qaram Portfolio</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS Bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CDN (for social icons) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!--HEADER-->
+ <header id="navbar-placeholder"></header>
+
+<!--MAIN CONTENT-->
+<section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+        <!--HEADER-->
+        <h2 class="text-center mb-4">Our Portfolio</h2>
+        <p class="text-center mb-5">Some of our valued clients and projects across various industries.</p>
+
+         <!-- Filter Buttons 
+      <div class="text-center mb-4">
+   button class="btn btn-outline-primary me-2" data-filter="all">All</button> 
+        <button class="btn btn-outline-primary me-2" data-filter="aircon">Air-conditioning</button>
+    button class="btn btn-outline-primary me-2" data-filter="electrical">Electrical</button>
+        <button class="btn btn-outline-primary me-2" data-filter="plumbing">Plumbing</button>
+        <button class="btn btn-outline-primary me-2" data-filter="gas">Gas</button>
+      </div>-->
+
+      <!-- Client Grid -->
+<div class="row g-4">
+  <div class="col-md-4 portfolio-item" data-category="aircon">
+    <div class="card h-100 text-center p-3">
+      <img src="images/aircon.png" class="card-img-top mx-auto" alt="aircon" style=" max-height: 200x;">
+      <div class="card-body">
+       <h5 class="card-text">Air-conditioning installation and maintenance projects.</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 portfolio-item" data-category="electrical">
+    <div class="card h-100 text-center p-3">
+      <img src="images/glass.png"class="card-img-top mx-auto" alt="glass"style="max: height 350px;">
+      <div class="card-body">
+        <h5 class="card-text">Glass & Aluminium Doors</h5>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md-4 portfolio-item" data-category="aircon">
+    <div class="card h-100 text-center p-3">
+      <img src="images/windows.png" class="card-img-top mx-auto" alt="windows" style=" max-height: 200x;">
+      <div class="card-body">
+       <h5 class="card-text">Glass & Aluminium Windows</h5>
+    </div>
+  </div>
+</div> <!-- closes row -->
+
+<div class="row g-4">
+  <div class="col-md-4 portfolio-item" data-category="aircon">
+    <div class="card h-100 text-center p-3">
+      <img src="images/project4.png" class="card-img-top mx-auto" alt="project4" style=" max-height: 200x;">
+      <div class="card-body">
+       <h5 class="card-text">Glass & Aluminium Windows</h5>
+      </div>
+    </div>
+  </div>
+</div> <!-- closes container -->
+</section>
+
+<!--FOOTER-->
+<footer id="footer-placeholder"></footer>
+
+<!--JS-->
+<script src="JS/index.js"></script>
+ </body>
+</html>
